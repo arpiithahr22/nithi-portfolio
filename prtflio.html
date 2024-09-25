@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+
+        }
+
+        body {
+            background-color: #080e27;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        nav{
+            display: flex;
+            justify-content:space-around;
+            align-items: center;
+            height:120px;
+            background-color: #0a0815;
+        }
+        nav ul{
+            display:flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            
+            margin:0px 23px;
+        }
+        nav ul li a{
+            text-decoration: none;
+            color: aliceblue;
+        }
+        nav ul li a:hover .stars{
+            font-size: 1.04rem;
+            color: rgb(90, 95, 154);
+          
+        }
+        .left{
+            height: 90px;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        .src-img {
+            width:100px;
+            height: 100px;
+            display: flex;
+        
+            background-color: #0f3136;
+            border-radius: 150%;
+            border:3px solid #050707;
+            box-shadow: 1px 1px 1px 1px #2c1424;
+        }
+        .heading{
+            font-weight: bold;
+            font-size: 2rem;
+            color:rgb(232, 227, 221)
+        }
+        .purple{
+            color:rgb(21, 189, 192);
+        }
+        .firstsection{
+            justify-content: space-around;
+            display: flex;
+            margin: 23px 0px;
+        }
+        .firstsection div{
+           width: 30%;
+        }
+        .thank{
+            font-size: 2rem;
+            align-items: center;
+            color:rgb(193, 188, 207)
+        }
+        .leftsection{
+            /*background-color: #2a597b;*/
+            width:100px;
+            font-size: 1.5rem;
+            border-radius: 10px;
+            background-color: rgb(8, 15, 21);
+            align-items: center;
+            padding: 30px;
+            margin: 20px;
+            box-shadow: 1px 2px 3px 4px #224862;
+        }
+       
+        .rightsection{
+            /*background-color: #275e87;*/
+            padding: 20px;
+            
+            margin: 10px;
+        }
+        .rightsection img{
+            /*background-color: #275e87;*/
+            width: 200px;
+            height: 200px;
+            border-radius: 100%;
+            box-shadow: 2px 2px 3px 4px #224862;
+          
+        }
+      
+        
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">
+                <ul>
+                <img src="https://tse1.mm.bing.net/th/id/OIP.7gegyXEiTu8RGpOTJ3vzkAHaLH?w=115&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7" alt="oops! nothing to show" class="src-img">
+            
+                
+            </ul>
+            </div>
+            <div class="right">
+                <ul>
+                    <li class="heading">Arpitha's Portfolio</li>
+                    <li></li>
+                    <li></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="contact.html">Contact                  me </a></li>
+
+                </ul>
+            </div>
+        </nav>
+    </header>
+<main>
+    <center> <marquee ><div class="thank"> Thank you for visiting my Portfolio!!      Thank you for visiting my Portfolio!!</div></marquee></center>
+        
+    <section class="firstsection">
+       <div class="leftsection">
+           Hi!! My name is <span class="purple">Arpitha</span><br><br> I am a <span class='purple'>passionate </span><br>
+       <span id="element"></span>
+       <br>
+     
+        </div>
+            <div class="rightsection">
+               <img src="https://th.bing.com/th?id=OIP.gYaHuqEoGNh187-is_ucZQHaJ3&w=216&h=288&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=3.1&rm=2" alt="nothing to show">
+        </div>
+    </section>
+<section>
+    <div id="element2"></div>
+</section>
+</main>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script>
+    var typed = new Typed('#element', {
+     strings: ['Computer Science and Engineering student..','frontend developer..', ' learner..','techie..',],
+     typeSpeed: 70,
+   });
+   var typed = new Typed('#element2', {
+  strings: ['Eagerly waiting to expand my skills and knowledge in software fiild through hands on experience and opportunities... My curiosity drives me to experiment with new technologies... I beleive in lifelong learning and am committed to developing my skills and knowledge...'],
+  typeSpeed:80,
+   // Default value
+});
+</script>
+</body>
+</html>
